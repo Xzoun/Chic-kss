@@ -1,0 +1,170 @@
+/* ------------------------ Chat List*/
+.chatListCont {
+    max-height: 65vh;
+}
+
+.openChatBtn {
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #fdcae1;
+    border-radius: 0%;
+
+    h2 {
+        font-weight: 750;
+    }
+}
+
+.openChatBtn p {
+    align-self: flex-end;
+}
+
+.openChatBtn:hover .userGuestPhoto {
+    cursor: pointer;
+    border: solid 5px #fdcae1;
+    cursor: pointer;
+}
+
+/* ------------------------ Chat Room*/
+
+.profLink {
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    display: flex;
+    font-weight: 600;
+    cursor: pointer;
+    align-items: center;
+    justify-content: start;
+    border-radius: 0%;
+    gap: 2vw;
+    border-bottom: solid #fdcae1 1px;
+    width: 98%;
+}
+
+.profLinkImg {
+    height: 5vh;
+    width: 5vh;
+    border-radius: 50%;
+}
+
+.chatWindow {
+    max-height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-width: 50vw;
+    overflow: hidden;
+    padding: 0.5rem;
+    position: fixed;
+}
+
+.messages {
+    overflow-x: hidden;
+    overflow-y: scroll;
+    height: 67vh;
+    width: 95vw;
+    padding-right: 2vw;
+}
+
+.nuevoMensaje {
+    position: fixed;
+    bottom: 10vh;
+    width: 96vw;
+    display: flex;
+    gap: 2rem;
+    z-index: 999999;
+}
+
+.inputChat {
+    width: 85%;
+    color: black;
+}
+
+.messageChatDiv {
+    max-width: 98vw;
+    display: flex;
+    flex-direction: row;
+    gap: 5vw;
+
+    .emissary {
+        min-width: 20%;
+    }
+}
+
+.emissary,
+.meEmissary {
+    max-width: 98vw;
+    font-weight: bold;
+    display: flex;
+}
+
+.firstMessage,
+.myFirstMessage,
+.lastMessage,
+.myLastMessage,
+.message,
+.myMessage,
+.firstLastMessage,
+.myFirstLastMessage {
+    background-color: #ec16761c;
+    display: flex;
+    max-width: 94vw;
+    word-wrap: break-word;
+    padding: 0 2vw;
+}
+
+.firstLastMessage {
+    border-radius: 10px;
+}
+
+.myFirstLastMessage {
+    border-radius: 10px;
+    display: flex;
+    justify-content: end;
+}
+
+.firstMessage,
+.myFirstMessage {
+    margin-top: 1vh;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding-top: 0.5vh;
+}
+
+.lastMessage,
+.myLastMessage {
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding-bottom: 0.5vh;
+}
+
+.meEmissary {
+    justify-content: end;
+}
+
+.myLastMessage,
+.myFirstLastMessage,
+.myMessage,
+.myFirstMessage {
+    justify-content: end;
+    background-color: #00e1ff31;
+}
+
+.sendMsgBtn {
+    background-color: #fdcae1;
+    border: none;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sendMsgImg {
+    width: 20px;
+    height: 20px;
+}

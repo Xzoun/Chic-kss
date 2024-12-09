@@ -1,0 +1,426 @@
+/* ------------------------------- Banner */
+
+.bannerCont {
+    height: 40vh;
+    width: calc(98vw - 8px);
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    position: relative;
+    border: none;
+    overflow: hidden;
+    border: solid 4px white;
+}
+
+.profileBannerPic {
+    width: 100%;
+    position: absolute;
+    border-radius: 15px;
+}
+
+.bannerInfo {
+    position: absolute;
+    bottom: 4vh;
+    left: 6vw;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    z-index: 100;
+}
+
+.bannerName {
+    font-size: 2ch;
+}
+
+.bannerProf {
+    color: rgb(143, 143, 143);
+    font-size: 1.5ch;
+}
+
+.bannerStyleImg {
+    position: absolute;
+    bottom: -10vh;
+    width: 100vw;
+    border: none;
+    z-index: 50;
+}
+
+/* ------------------------------- Stats */
+
+.stats {
+    width: 78vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 10vw;
+    overflow: hidden;
+    height: 10vh;
+}
+
+.stat {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.statName {
+    color: rgb(143, 143, 143);
+}
+
+.statNum {
+    font-size: 2.5ch;
+}
+
+.statButton {
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    cursor: pointer;
+}
+
+.statButton:hover {
+    transform: scale(0.95)
+}
+
+.statBorder {
+    border-right: 1px solid #8f8f8f;
+    height: 4vh;
+}
+
+.settings {
+    height: 5vh;
+    width: 5vh;
+}
+
+/* ------------------------------- Redes */
+.redesCont {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3vh;
+}
+
+.redCont {
+    height: 5vh;
+
+}
+
+.redCont:hover {
+    cursor: pointer;
+    transform: scale(0.95);
+}
+
+.logoRed {
+    height: 4vh;
+    filter: invert(59%) sepia(9%) saturate(0%) hue-rotate(167deg) brightness(96%) contrast(85%);
+}
+
+/* ------------------------------- Redes */
+.myLikes {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(30%, 1fr));
+    grid-gap: 1vw;
+    padding-bottom: 10vh;
+}
+
+.myLikeCont {
+    overflow: hidden;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+}
+
+.myLike {
+    max-height: 30vw;
+    width: max-content;
+    border-radius: 8px;
+}
+
+/* ------------------------------- Edit Profile */
+
+.editBannerProf {
+    min-height: 45vh;
+    width: calc(98vw - 8px);
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    overflow: hidden;
+    border: solid 4px white;
+    background-color: #fdcae1;
+    gap: 2vh;
+}
+
+.editBannerNameCont {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2vh;
+}
+
+.backEdit {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 12vh;
+    left: 5vw;
+    cursor: pointer;
+}
+
+.adminChanger {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 12vh;
+    right: 5vw;
+    cursor: pointer;
+}
+
+.roundedProfilePic {
+    width: 30vw;
+    height: 30vw;
+}
+
+.editPhotoProf {
+    width: 30vw;
+    height: 30vw;
+    position: absolute;
+    z-index: 99999;
+    top: 0;
+    left: 0;
+}
+
+.editPhotoProfCont {
+    position: relative;
+    background-color: rgba(0, 0, 0, 0);
+    border-radius: 50%;
+}
+
+#editPhoto {
+    visibility: hidden;
+}
+
+.roundedPicDiv {
+    width: 30vw;
+    height: 30vw;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: white 4px solid;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.roundedPicDiv:hover {
+    #editPhoto {
+        visibility: visible;
+    }
+}
+
+.bannerInputCont {
+    display: flex;
+    gap: 2vw;
+    align-items: center;
+}
+
+.bannerInput {
+    width: 20vw;
+    border: none;
+    border-bottom: solid white 1px;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.bannerInput:focus {
+    border-bottom: solid 1px black;
+    outline: none;
+}
+
+.saveBannerBtn {
+    border: none;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.editInfo {
+    min-height: 40vh;
+    width: 98vw;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    overflow: hidden;
+    background-color: white;
+    position: relative;
+    top: -5vh;
+    gap: 2vh;
+    padding-top: 5vh;
+    padding-bottom: 10vh;
+}
+
+.ref {
+    width: 97vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.refPic {
+    height: 8vh;
+    border-radius: 15px;
+}
+
+.refDescCont {
+    width: 80vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 15vw 0 0;
+}
+
+.redNameLabel {
+    width: 20vw;
+}
+
+.flecha {
+    width: 2vh;
+    height: 2vh;
+    cursor: pointer;
+}
+
+label {
+    cursor: pointer;
+}
+
+/* ------------------------------- Galería Profile */
+.layProf {
+    height: 80vh;
+    margin-top: 11vh;
+    width: 97vw;
+    overflow: hidden;
+    padding: 0 1vw;
+}
+
+.profViewCont {
+    width: 98vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    height: 75vh;
+    border-radius: 15px;
+}
+
+.cerrarPhotoBtn {
+    position: absolute;
+    top: 12vh;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 2vw;
+    right: 1vw;
+    top: 11vh;
+    z-index: 9999;
+}
+
+.cerrarPhotoImgProf {
+    height: 3vh;
+    width: 3vh;
+}
+
+@media (min-width: 796px) {
+
+    .bannerCont {
+        height: 50vh;
+        width: 50vw;
+        border-radius: 0%;
+        border-radius: 15px;
+        border: none;
+        margin-left: 20vw;
+        overflow: visible;
+    }
+
+    .bannerStyleImg {
+        display: none;
+    }
+
+    .profileBannerPic {
+        border-radius: 0%;
+        height: 40vh;
+        width: 40vh;
+        left: 0vw;
+    }
+
+    .bannerInfo {
+        left: 15vw;
+        width: fit-content;
+
+    }
+
+    .editBannerProf {
+        min-height: 60vh;
+        width: calc(98vw - 8px);
+        border-top-left-radius: 30px;
+        border-top-right-radius: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border: none;
+        overflow: hidden;
+        border: solid 4px white;
+        background-color: #fdcae1;
+        gap: 2vh;
+    }
+
+    .editInfo {
+        min-height: 40vh;
+        width: 98vw;
+        border-top-left-radius: 30px;
+        border-top-right-radius: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border: none;
+        overflow: hidden;
+        background-color: white;
+        position: relative;
+        gap: 2vh;
+        padding-top: 5vh;
+        padding-bottom: 10vh;
+    }
+
+    .myLikes {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(15%, 1fr));
+        grid-gap: 1vw;
+        padding-bottom: 10vh;
+    }
+
+    .myLikeCont {
+        cursor: pointer;
+        max-height: 40vh;
+    }
+
+    .myLikeCont:hover {
+        cursor: pointer;
+        transform: scale(0.95);
+    }
+
+    .myLike {
+        height: auto;
+        width: 100%;
+        border-radius: 8px;
+    }
+}

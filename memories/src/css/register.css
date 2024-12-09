@@ -1,0 +1,45 @@
+.registerLayout {
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5vh;
+    justify-content: space-around;
+    overflow: hidden;
+}
+
+.indicadorBtnCont {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2vh;
+}
+
+button {
+    background-color: #fdcae1;
+    border-radius: 8px;
+    padding: 1vh;
+    border: none;
+}
+
+button:hover{
+    cursor: pointer;
+    transform: scale(0.95);
+}
+
+button:focus {
+    color: none;
+}
+
+.logosCont {
+    width: 98%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5vw;
+}
+
+.logo {
+    height: 5vh;
+}

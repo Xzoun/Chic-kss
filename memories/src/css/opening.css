@@ -1,0 +1,113 @@
+/* --------------------------- General --------------------------- */
+
+.fadeIn {
+    opacity: 0;
+    animation: fadeIn ease-in 1;
+    animation-fill-mode: forwards;
+    animation-duration: 3s;
+}
+
+.fadeOut {
+    opacity: 1;
+    animation: fadeOut ease-in 1;
+    animation-fill-mode: forwards;
+    animation-duration: 2s;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+.layoutOpening {
+    border-radius: 5px;
+    box-shadow: inset 1px 1px 1px black;
+    background-color: white;
+    height: 98vh;
+    width: 98vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -5;
+    padding: 1vh 1vw;
+}
+
+/* ---------  App Logo --------- */
+.logoAppFlex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10vh;
+    min-width: 80vw;
+}
+
+.logoContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40vh;
+    width: 40vh;
+}
+
+.logoImageEffect {
+    width: 0;
+    height: 0;
+    background-image: url("../imagenes/logoChic.png");
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    animation: growLogo 2s ease-out forwards;
+}
+
+.logoImage {
+    width: 100%;
+    height: 100%;
+    background-image: url("../imagenes/logoChic.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.logoChicCont {
+    display: flex;
+    
+}
+
+.logoChic {
+    width: 5vh;
+    height: 5vh;
+}
+
+/* ----------------- Efectos----------------- */
+
+@keyframes growLogo {
+    from {
+        width: 0;
+        height: 0;
+    }
+
+    to {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}

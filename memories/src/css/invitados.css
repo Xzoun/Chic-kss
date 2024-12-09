@@ -1,0 +1,32 @@
+.cont {
+    display: flex;
+    height: 20vh;
+    align-items: center;
+    overflow: hidden;
+   
+}
+
+.fotoInvitadoCont {
+    display: flex;
+    overflow-x: scroll;
+    gap: 2vw;
+    border-bottom: #fdcae1 1px solid;
+    width: 98vw; 
+}
+
+.userGuestBtn {
+    background-color: rgba(0,0,0,0);
+    border: none;
+}
+
+.userGuestPhoto {
+    border-radius: 50%;
+    height: 10vh;
+    width: 10vh;
+    border: solid 5px rgba(0,0,0,0);
+}
+
+.userGuestPhoto:hover{
+    border: solid 5px #fdcae1;
+    cursor: pointer;
+}

@@ -1,0 +1,342 @@
+/* ------------------------------------- General*/
+.headerBloque {
+    font-size: 2.2ch;
+    font-weight: bold;
+    border-radius: 8px;
+    max-width: fit-content;
+    align-self: center;
+    justify-self: center;
+    height: 2vh;
+}
+
+.icon {
+    width: 4vh;
+    height: 4vh;
+    cursor: pointer;
+    padding: 2vh;
+    background-color: rgba(255, 255, 255, 0.0);
+}
+
+.camera:hover {
+    transform: scale(0.95);
+}
+
+/* ------------------------------------- Creacion del Evento*/
+/* ------------------- Form*/
+.openFormBtn {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    position: absolute;
+    right: 0vw;
+    top: 9vh;
+    border: none;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.crearEventoQR {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 200vh;
+    overflow-x: hidden;
+}
+
+.vw100 {
+    min-width: 94vw;
+    padding: 2vw;
+    overflow-x: hidden;
+}
+
+.formCrearEvent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2vh;
+    padding: 5vw 5vw 0 5vw;
+    font-size: 2ch;
+    width: 80vw;
+}
+
+.bloque {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.input {
+    border: none;
+    border-bottom: solid 1px black;
+}
+
+.input:focus {
+    border-bottom: solid 2px #fdcae1;
+    outline: none;
+}
+
+.selectFoto {
+    padding: 30px;
+}
+
+/* ------------------- NewEvent */
+
+/* .flexY | .flexYChild en general.css */
+
+.qr {
+    min-width: 90vw;
+    border: solid 5px rgba(0, 0, 0, 0);
+}
+
+.qr:hover {
+    border: solid 5px #fdcae1;
+    border-radius: 8px;
+}
+
+.relativeRight {
+    position: relative;
+    left: 80vw;
+}
+
+/* ------------------------------------- Visualización del Evento*/
+
+/* ------------------- Eventos Minimizados */
+.marginBot {
+    margin-bottom: 6vh;
+}
+
+.eventBtn {
+    border: none;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.eventBtnCont {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    flex-direction: row;
+    gap: 2vw;
+    left: 2vw;
+    top: 11vh;
+}
+
+.eventBtnImg {
+    width: 4vh;
+    height: 4vh;
+}
+
+.eventBtnImg:hover {
+    transform: scale(0.95);
+    cursor: pointer;
+}
+
+.eventsClosed {
+    display: flex;
+    flex-direction: column;
+}
+
+.rotate {
+    rotate: 90deg;
+    filter: invert(90%) sepia(15%) saturate(5262%) hue-rotate(286deg) brightness(98%) contrast(84%);
+}
+
+/* ------------------- Lista de Eventos */
+
+.eventList {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 2ch;
+    border-radius: 15px;
+    gap: 2vh;
+}
+
+.eventContEventList {
+    position: relative;
+    height: 25vh;
+    border-radius: 25px;
+    width: 100%;
+    overflow: hidden;
+    box-shadow: 0px 10px 10px 1px rgba(0, 0, 0, 0.3);
+    border-bottom: solid 6px rgba(0, 0, 0, 0.3);
+    border-top: solid 5px rgba(0, 0, 0, 0);
+}
+
+.eventContEventList:hover {
+    border: solid 5px #fdcae1;
+}
+
+.photoEventList {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+}
+
+.holder {
+    height: 5vh;
+}
+
+.eventInfoEventList {
+    position: absolute;
+    width: 93%;
+    color: white;
+    bottom: 5vh;
+    left: 7vw;
+    background: rgba(0, 0, 0, 0);
+    border-radius: 12px;
+    padding: 2vw;
+
+    h3 {
+        font-size: 2.5ch;
+    }
+
+}
+
+.fixedRightBot {
+    position: fixed;
+    right: 3vw;
+    bottom: 10vh;
+}
+
+/* ------------------------------------- Portada*/
+.portada {
+    max-width: 94.5vw;
+    border-radius: 8px;
+}
+
+/* ------------------------------------- Reports*/
+.reportsBack {
+    position: fixed;
+    top: 10vh;
+    background-color: white;
+    width: 96vw;
+    min-height: 78vh;
+    overflow-y: scroll;
+    z-index: 99999999;
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    gap: 2vh;
+    padding: 2vw;
+}
+
+.reportsBtn {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    position: absolute;
+    right: 10vw;
+    top: 9vh;
+    border: none;
+    background-color: rgba(0, 0, 0, 0);
+    z-index: 999999999;
+}
+
+.reportedFoto {
+    display: flex;
+    width: 100%;
+    gap: 2vw;
+    align-items: center;
+    height: 15vh;
+}
+
+.photoReported {
+    max-height: 100%;
+    max-width: 35vw;
+}
+
+.userReported {
+    display: flex;
+    gap: 2vw;
+    width: 100%;
+    align-items: center;
+}
+
+.userReportedPhoto {
+    height: 4vh;
+    border-radius: 50%;
+}
+
+.reportesGenerales {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    gap: 2vh;
+    width: 100%;
+}
+
+.reportInfo {
+    display: flex;
+    width: 100%;
+    align-items: start;
+    justify-content: space-around;
+    height: 100%;
+}
+
+.reportInfo .ReportInfoGeneral,
+.reportInfo .usersReporting,
+.userReported {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+}
+
+.reportInfo div h4 {
+    align-self: center;
+}
+
+.bannDiv {
+    display: flex;
+    align-items: center;
+}
+
+.bannDiv h3 {
+    width: fit-content;
+}
+
+.bannBtn {
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.bannBtn:hover {
+    transform: scale(0.95);
+    cursor: pointer;
+}
+
+.bannIcon {
+    height: 3vh;
+    width: 3vh;
+    filter: invert(7%) sepia(88%) saturate(5243%) hue-rotate(357deg) brightness(96%) contrast(93%);
+}
+
+@media (min-width:796px) {
+
+    .qr {
+        min-width: 20vw;
+    }
+
+    .portada {
+        max-width: 50vw;
+        max-height: 30vw;
+    }
+
+    #verQR {
+        display: none;
+    }
+
+    .eventList {
+        width: 70vw;
+        margin-left: 15vw;
+    }
+
+    .eventContEventList {
+
+        height: 40vh;
+
+    }
+}

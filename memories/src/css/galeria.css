@@ -1,0 +1,279 @@
+/* TODOS LOS ESTADOS : PORTADA DEL ALBUM | FOTO */
+
+.backGallery {
+    background-color: black;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+}
+
+.photoLayout {
+    border-radius: 5px;
+    box-shadow: inset 1px 1px 1px black;
+    background-color: white;
+    /* Aca es el 100vh menos | 2vh de padding layout | 10 vh de padding (Header) | 8vh (Nav) */
+    height: 85vh;
+    width: 98vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 6vh 1vw 1vh 1vw;
+    overflow-y: scroll;
+    gap: 1vh;
+    overflow-x: hidden;
+}
+
+.gallery {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 2ch;
+    margin-bottom: 11vh;
+}
+
+.photoContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(30%, 1fr));
+    grid-gap: 1vw;
+
+    div {
+        border-radius: 8px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+
+.photo {
+    height: auto;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.photo:hover {
+    transform: scale(0.95);
+}
+
+.info {
+    width: 90vw;
+    align-self: self-start;
+    padding: 1vh;
+}
+
+.borderRad {
+    border-radius: 8px;
+}
+
+.marginBot {
+    margin-bottom: 4vh;
+}
+
+.photoViewCont {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 5vh;
+    margin-bottom: 5vh;
+}
+
+.photoView {
+    max-width: 98vw;
+    max-height: 78vh;
+}
+
+.userInfo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 5vh;
+    align-self: flex-start;
+    position: absolute;
+    left: 2vh;
+    bottom: 2vh;
+}
+
+.userInfo h2 {
+    /* box-shadow: inset 0px 0px 10px 1px #fdcae1; */
+    background-color: #fdcae1a1;
+    border-radius: 4px;
+    padding: 2px;
+}
+
+.userPhoto {
+    border-radius: 50%;
+    height: 5vh;
+    width: 5vh;
+}
+
+.controls {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0vh;
+}
+
+.controlBtn {
+    width: 50%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0);
+    filter: invert(81%) sepia(17%) saturate(459%) hue-rotate(287deg) brightness(102%) contrast(98%);
+    display: flex;
+    border: none;
+}
+
+.closePhotoBtn {
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.2);
+    border: none;
+    border-radius: 50%;
+    padding: 10px;
+    height: 4vh;
+    width: 4vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 1vw;
+    right: 1vw;
+    z-index: 999;
+}
+
+.likePhotoBtn {
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.2);
+    border: none;
+    border-radius: 50%;
+    padding: 10px;
+    height: 4vh;
+    width: 4vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: 2vh;
+    right: 3vw;
+    z-index: 999;
+
+}
+
+.likedPhotoImg {
+    background-color: rgba(255, 255, 255, 0);
+    filter: invert(81%) sepia(17%) saturate(459%) hue-rotate(287deg) brightness(102%) contrast(98%);
+    border-radius: 50%;
+    padding: 10px;
+    height: 4vh;
+    width: 4vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: 1vw;
+    right: 1vw;
+    z-index: 999;
+}
+
+.controlBtn:hover {
+    cursor: pointer;
+}
+
+.deletePhotoBtn {
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.2);
+    border: none;
+    border-radius: 50%;
+    padding: 10px;
+    height: 4vh;
+    width: 4vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: 10vh;
+    right: 3vw;
+    z-index: 999;
+}
+
+.hiddenDeletePhotoBtn {
+    display: none;
+}
+
+.reportPhotoBtn {
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.2);
+    border: none;
+    border-radius: 50%;
+    padding: 10px;
+    height: 4vh;
+    width: 4vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: 2vh;
+    right: 40vw;
+    z-index: 999;
+}
+
+.likePhotoImg {
+    background-color: rgba(255, 255, 255, 0);
+    border-radius: 50%;
+    height: 4vh;
+    width: 4vh;
+    padding: 1vh;
+}
+
+.deletePhotoImg {
+    background-color: rgba(255, 255, 255, 0);
+    filter: invert(7%) sepia(88%) saturate(5243%) hue-rotate(357deg) brightness(96%) contrast(93%);
+    border-radius: 50%;
+    height: 4vh;
+    width: 4vh;
+    padding: 1vh;
+}
+
+.cerrarPhotoImg {
+    height: 2vh;
+    width: 2vh;
+    border-radius: 50%;
+    padding: 1vh;
+}
+
+.reportPhotoImg {
+    height: 4vh;
+    width: 4vh;
+    border-radius: 50%;
+    padding: 1vh;
+    filter: invert(7%) sepia(88%) saturate(5243%) hue-rotate(357deg) brightness(96%) contrast(93%);
+}
+
+.deletePhoto:hover,
+.likePhotoImg:hover,
+.likedPhotoImg:hover,
+.cerrarPhotoImg:hover,
+.reportPhotoImg:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+@media (min-width:795px) {
+
+    .photoContainer {
+        min-height: 28vw;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(10%, 1fr));
+        grid-gap: 1vw;
+        min-width: 90vw;
+        margin-bottom: 2vh;
+    }
+
+    .controls {
+        top: 30vh;
+    }
+}

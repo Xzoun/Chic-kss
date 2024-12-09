@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/* ---------------------- General ---------------------- */
+
+body {
+  font-family:'Catamaran','Roboto','Quicksand';
+  font-size: 1.5ch;
+}
+
+button,
+.gallery {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-focus-ring-color: transparent;
+  outline: none;
+}
+
+button h2 {
+  font-size: inherit;
+  font-weight: inherit;
+  color: inherit;
+}
+
+.padding {
+  padding: 1vh;
+}
+
+.flexY {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  max-width: 100vw;
+  overflow-x: scroll;
+  gap: 2vw;
+}
+
+.flexYChild {
+  min-width: 93vw;
+  padding: 2vw;
+}
+
+.empty {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 30vh;
+}
+
+/* ------------------------------- Scroll */
+*::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+  background-color: rgba(0,0,0,0);
+}
+
+*:hover::-webkit-scrollbar-thumb {
+  border-radius: 12px;
+  background-color: #fdcae1;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  width: 3px;
+  background-color: #e78db6;
+  border-radius: 12px;
+}
+
+/* ------------------------------- Layouts */
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+.back {
+  background-color: black;
+  z-index: -10;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+}
+
+.layout {
+  border-radius: 5px;
+  background-color: white;
+  /* Aca es el 100vh menos | 2vh de padding layout | 16 vh de padding (Header) | 8vh (Nav) */
+  height: 78vh;
+  width: 98vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -5;
+  padding: 9vh 1vw 5vh 1vw;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+/* ------------------------- Fuentes */
+.caveat {
+  font-family: caveat;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.big {
+  font-size: 6ch;
+}
+
+@media (min-width:796px) {
+  .flexY {
+    overflow: hidden;
+    justify-content: space-around;
+  }
+
+  .flexYChild {
+    min-width: 1vw;
+    padding: 2vw;
+  }
+
+}
